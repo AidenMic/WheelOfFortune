@@ -11,13 +11,14 @@ function guessLetter(event, puzzle, puzzleDiv, prevLetters) {
 	let inputChar = event.key.toLocaleLowerCase();
 	let numValue = 0;
 	
-	if (!prevLetters.innerHTML.includes(inputChar)) {
+	if (
+			(inputChar.length == 1) && 
+			(!prevLetters.innerHTML.includes(inputChar))
+		)
+		{
 		prevLetters.innerHTML = prevLetters.innerHTML + inputChar;
 	
-		if (
-			(inputChar.length == 1) && 
-			(puzzle.includes(inputChar))
-			)
+		if (puzzle.includes(inputChar))
 		{
 			console.log(`yippee: ` + inputChar);
 			let puzzleIndex = -1;
