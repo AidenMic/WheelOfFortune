@@ -4,10 +4,11 @@ function puzzleHide(puzzleDiv) {
 	return puzzle;
 }
 
-
 let puzzle = "";
 let puzzleDiv;
 
 
-puzzleDiv = document.getElementById("puzzle");
-puzzle = puzzleHide(puzzleDiv);
+window.onload = (event) => {
+	puzzleDiv = document.getElementById("puzzle");
+	puzzle = puzzleHide(puzzleDiv);
+};
