@@ -23,6 +23,7 @@ function guessLetter(event, puzzle, puzzleDiv) {
 			puzzleIndex++;
 			puzzleIndex = puzzle.indexOf(inputChar, puzzleIndex);
 			if (puzzleIndex !== -1) {
+				puzzleDiv.innerHTML = puzzleDiv.innerHTML.substring(0, puzzleIndex) + inputChar + puzzleDiv.innerHTML.substring(puzzleIndex + 1);
 				numValue++;
 			}
 			else {
