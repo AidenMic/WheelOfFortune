@@ -6,3 +6,9 @@
 	text-decoration-line: overline underline;
 	text-decoration-color: purple;
 }
+#prevLetters {
+	text-transform: uppercase;
+	font-family: "Monaco", "Courier New", monospace;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
