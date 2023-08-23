@@ -50,6 +50,7 @@ function solvePuzzle(event, guessPuzzle, puzzle, puzzleDiv) {
 		{
 			puzzleDiv.innerHTML = puzzle;
 		}
+		guessPuzzle.value = ``;
 	}
 }
 
